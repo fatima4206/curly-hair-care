@@ -4,19 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Best Products for 3A Curly Hair | CurlCraft Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
     :root {
-      --primary: #4A3E3D;
-      --accent: #C87D55;
-      --accent-light: #F4E8E1;
-      --bg-light: #FAF6F0;
+      --primary: #8E5B6E;
+      --accent: #E89CAE;
+      --accent-light: #FFF0F4;
+      --bg-light: #FFFAFC;
       --card-bg: #FFFFFF;
-      --text-main: #2C2523;
-      --text-muted: #6E625E;
-      --notice-bg: #FFF3CD;
-      --notice-border: #FFEBAA;
-      --notice-text: #856404;
-      --border-color: #E2D7CE;
+      --text-main: #4A3B40;
+      --text-muted: #8A737C;
+      --notice-bg: #FFF5F7;
+      --notice-border: #FAD0DD;
+      --notice-text: #9E4A68;
+      --border-color: #F7DDE5;
+      --font-serif: 'Cormorant Garamond', Georgia, serif;
+      --font-sans: 'Montserrat', sans-serif;
     }
 
     * {
@@ -26,8 +31,9 @@
     }
 
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      line-height: 1.6;
+      font-family: var(--font-sans);
+      font-weight: 300;
+      line-height: 1.7;
       color: var(--text-main);
       background-color: var(--bg-light);
       display: flex;
@@ -41,8 +47,9 @@
       color: var(--notice-text);
       text-align: center;
       padding: 10px 15px;
-      font-size: 0.85rem;
-      font-weight: 600;
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.5px;
     }
 
     .educational-notice.footer-notice {
@@ -54,27 +61,31 @@
     header {
       background-color: var(--card-bg);
       border-bottom: 1px solid var(--border-color);
-      padding: 20px 15px;
+      padding: 25px 15px 20px 15px;
       text-align: center;
     }
 
     .site-title {
-      font-size: 1.8rem;
-      color: var(--accent);
-      font-weight: 700;
-      letter-spacing: -0.5px;
-      margin-bottom: 4px;
+      font-family: var(--font-serif);
+      font-size: 2.3rem;
+      color: var(--primary);
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin-bottom: 2px;
     }
 
     .site-tagline {
-      font-size: 0.9rem;
+      font-size: 0.82rem;
       color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
       margin-bottom: 15px;
     }
 
     nav {
-      background-color: var(--primary);
-      padding: 10px;
+      background-color: var(--accent-light);
+      border-bottom: 1px solid var(--border-color);
+      padding: 12px 10px;
       position: sticky;
       top: 0;
       z-index: 100;
@@ -85,85 +96,96 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 10px 15px;
+      gap: 8px 12px;
     }
 
     nav a {
-      color: #FFFFFF;
+      color: var(--primary);
       text-decoration: none;
-      font-size: 0.88rem;
+      font-size: 0.82rem;
       font-weight: 500;
-      padding: 6px 12px;
-      border-radius: 4px;
-      transition: background-color 0.2s ease;
+      padding: 6px 14px;
+      border-radius: 20px;
+      transition: all 0.25s ease;
+      letter-spacing: 0.3px;
     }
 
     nav a:hover, nav a.active {
       background-color: var(--accent);
+      color: #FFFFFF;
+      box-shadow: 0 2px 6px rgba(232, 156, 174, 0.3);
     }
 
     .container {
       max-width: 900px;
       margin: 0 auto;
-      padding: 25px 15px;
+      padding: 30px 15px;
       width: 100%;
       flex: 1;
     }
 
     .page-header {
       margin-bottom: 25px;
+      text-align: center;
     }
 
     .page-header h1 {
-      font-size: 1.8rem;
+      font-family: var(--font-serif);
+      font-size: 2.1rem;
       color: var(--primary);
-      margin-bottom: 8px;
+      font-weight: 600;
+      margin-bottom: 6px;
     }
 
     .page-header p {
       color: var(--text-muted);
-      font-size: 1rem;
+      font-size: 0.95rem;
     }
 
     .guide-intro {
       background-color: var(--card-bg);
-      border-left: 4px solid var(--accent);
-      padding: 15px 20px;
-      margin-bottom: 25px;
-      border-radius: 0 8px 8px 0;
+      border-left: 3px solid var(--accent);
+      padding: 18px 22px;
+      margin-bottom: 30px;
+      border-radius: 0 12px 12px 0;
+      box-shadow: 0 3px 12px rgba(232, 156, 174, 0.05);
+      font-size: 0.92rem;
     }
 
     .product-card {
       background-color: var(--card-bg);
       border: 1px solid var(--border-color);
-      border-radius: 8px;
-      padding: 20px;
-      margin-bottom: 20px;
+      border-radius: 12px;
+      padding: 25px;
+      margin-bottom: 25px;
+      box-shadow: 0 3px 12px rgba(232, 156, 174, 0.05);
     }
 
     .product-category {
-      font-size: 0.75rem;
+      font-size: 0.72rem;
       text-transform: uppercase;
-      letter-spacing: 1px;
+      letter-spacing: 1.5px;
       color: var(--accent);
-      font-weight: 700;
+      font-weight: 600;
     }
 
     .product-title {
-      font-size: 1.3rem;
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
       color: var(--primary);
       margin: 2px 0 10px 0;
     }
 
     .product-specs {
       display: flex;
+      flex-wrap: wrap;
       gap: 15px;
-      font-size: 0.85rem;
+      font-size: 0.82rem;
       color: var(--text-muted);
-      margin-bottom: 12px;
-      background-color: var(--bg-light);
-      padding: 8px 12px;
-      border-radius: 4px;
+      margin-bottom: 15px;
+      background-color: var(--accent-light);
+      padding: 10px 14px;
+      border-radius: 8px;
     }
 
     .product-specs span strong {
@@ -171,37 +193,41 @@
     }
 
     .product-desc {
-      font-size: 0.95rem;
-      margin-bottom: 12px;
+      font-size: 0.92rem;
+      margin-bottom: 15px;
     }
 
     .why-it-works {
-      font-size: 0.9rem;
-      color: var(--primary);
-      background-color: var(--accent-light);
-      padding: 10px;
-      border-radius: 4px;
+      font-size: 0.88rem;
+      color: var(--text-main);
+      background-color: var(--bg-light);
+      border: 1px solid var(--border-color);
+      padding: 12px 15px;
+      border-radius: 8px;
     }
 
     .why-it-works strong {
-      color: var(--accent);
+      color: var(--primary);
+      font-family: var(--font-serif);
+      font-size: 0.98rem;
     }
 
     footer {
-      background-color: var(--primary);
-      color: #FFFFFF;
+      background-color: var(--card-bg);
+      border-top: 1px solid var(--border-color);
+      color: var(--text-muted);
       text-align: center;
       margin-top: auto;
     }
 
     .footer-content {
       padding: 20px 15px;
-      font-size: 0.85rem;
+      font-size: 0.8rem;
     }
 
     .footer-content p {
       margin-bottom: 5px;
-      color: #D3C9C4;
+      color: var(--text-muted);
     }
   </style>
 </head>
